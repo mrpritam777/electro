@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+div{
+    width:200px;
+    height:200px;
+}
+div p{
+    text-align: center;
+    font-size: 30px;
+}
+.original{
+    background-color: rgb(177, 98, 251);
+}
+.changing{
+    background-color: coral;
+    /* transform: translateX(200px); */
+    /* transform: translateY(-60px); */
+    /* transform: translate(200px, 100);*/
+    /* transform: rotate(-30deg); */
+    /* transform: skewX(-20deg); */
+    /* transform: skewY(-20deg); */
+
+
+
+
+    transition:transform 2s ease 1s,background-color 3s 1s;
+
+}
+.changing:hover{
+    transform: rotate(360deg);
+    background-color: red;
+}
