@@ -32,18 +32,67 @@ img{
     width: 100%;
     height: auto;
 }
+h1{
+    font-family: var(--headingFont);
+    font-size: 80px;
+    line-height: 1;
+}
 /* ---------------COMMON CLASS------------ */
 .container{
     max-width: 1440;
     width: 100%;
-    margin: 0 15px;
+    margin: 0 auto;
     padding: 0 15px;
+}
+.section_padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section_text{
+    /* background-color: brown; */
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+.section_text h2{
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.section_text p{
+    line-height: 1.5;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 -15px;
+}
+.col{
+    margin:0 15px;
+    border: 1px solid red;
+}
+.col-50 {
+    width: 50%;
+}
+.col-33 {
+    width: 33.33%;
+}
+.col-25 {
+    width:25%;
+}
+.align-center{
+    align-items: center;
 }
 
 /* ----------navbar------------- */
 .navbar{
     background-color: var(--black);
 }
+/* .navItems{
+    display: flex;
+} */
 nav{
     display: flex;
     justify-content: space-between;
@@ -70,4 +119,48 @@ nav{
 }
 .navlinks li a:hover{
     color:var(--lightYellow);
+}
+/* ----------banner---------- */
+.banner{
+    /* background-color: brown; */
+    height: calc(100vh - 85px);
+    background-image:url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+.banner .container{
+    /* background-color: aqua; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_content h1{
+    /* background-color: blueviolet; */
+    /* font-size: 80px; */
+    text-shadow: 2px 2px 0 var(--darkYellow),4px 4px 0 white;
+}
+/* -------about-------- */
+.aboutText p{
+    line-height: 1.8;
+}
+/* ----------products--------- */
+.products{
+    background-color: var(--darkYellow);
+}
+.productCard:hover{
+    background-color: chartreuse;
+    box-sizing: 0 0 15px rgb(40, 40, 40);
+}
+.productCard .cardImg{
+    height:300px;
+}
+.productCard .cardImg img{
+    height: 100%;
+}
+.productCard .cardText{
+    padding: 20px;
 }
